@@ -1,18 +1,26 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="/css/style.css">
-    </head>
+<html lang="en-US">
 
-    <body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img class="bum" src="images/image.jpg" alt="">
         <form action="/cgi-bin/index.py" method="get">
-<!--    <form action="/cgi-bin/index.py" method="post"> -->
-            User: <input type="text"     name="user"   ></br>
-            Pass: <input type="password" name="pass"   ></br>
-	          <input type="submit"   value="enviar">
+            <p>User:</p>
+            <input class="user" type="text" name="user"></br>
+            <p>Pass:</p>
+            <input class="password" type="password" name="pass"></br> <br>
+            <input class="submit" type="submit" value="Send">
         </form>
+    </div>
 
+    <script src="/js/script.js"></script>
 
-        <script src="/js/script.js"></script>
+</body>
 
-    </body>
 </html>
